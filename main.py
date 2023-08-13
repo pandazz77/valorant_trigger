@@ -29,7 +29,6 @@ def mse(img1,img2): # mean squared error
 
 while True:
     screen = mss.mss().grab(s.BBOX)
-    #screen = ImageGrab.grab(bbox=s.BBOX)
     np_array = np.array(screen)
     switch*=-1
     screen_mem[switch] = np_array
